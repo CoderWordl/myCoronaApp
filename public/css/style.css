@@ -1,0 +1,739 @@
+/* UNIVERSAL, IMPORT, BODY AND HTML */
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@300;600;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Unbounded', cursive;
+}
+
+:root {
+    --main-bg: #1e272e;
+    --main-color: #0097e6;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* UTILITY PART LIKE- NAVBAR AND FOOTER */
+
+/* ALL THE CSS FOR THE NAVBAR PART */
+
+/* ALL CS FOR LOGO AND FIRST PART */
+
+.navbar {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: var(--main-bg);
+}
+
+.navbar .container-fluid a i {
+    font-size: 3.6rem;
+    margin-right: .5rem;
+    animation-name: rotateit;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateit {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.navbar .container-fluid .navbar-brand {
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    padding: .9rem 1.5rem;
+    border: 1.5px solid transparent;
+    transition: .6s;
+}
+
+.navbar .container-fluid a:hover {
+    border: 1.5px solid #fff;
+}
+
+/* ALL CSS FOR UL AND LI (SECOND PART) */
+
+.navbar .container-fluid .collapse ul {
+    margin: 0 auto;
+}
+
+.navbar .container-fluid .collapse ul li {
+    padding: .6rem 1.8rem;
+    margin-right: .5rem;
+}
+
+.navbar .container-fluid .collapse ul li a {
+    text-transform: capitalize;
+    color: #fff;
+    border: 1.5px solid transparent;
+    transition: .6s;
+}
+
+.navbar .container-fluid .collapse ul li a:hover {
+    border: 1.5px solid #fff;
+}
+
+/* ALL FOR FORM (INPUT AND BUTTON) {THIRD PART}*/
+
+.navbar .container-fluid .collapse form input {
+    font-size: 1.6rem;
+    margin-right: 1rem;
+    padding: 2rem 1rem;
+}
+
+.navbar .container-fluid .collapse form button {
+    font-size: 1.6rem;
+    padding: .8rem 1.8rem;
+}
+
+.navbar .container-fluid .collapse form button:hover {
+    border-color: white;
+}
+
+.container-fluid .navbar-toggler {
+    background-color: #fff;
+}
+
+/* MEDIA QUERIES FOR NAVBAR */
+
+@media (max-width: 500px) {
+    .navbar .container-fluid a i {
+        font-size: 3.2rem;
+    }
+
+    .navbar .container-fluid a {
+        font-size: 1.7rem;
+    }
+}
+
+/* COMPLETE CODE OF NAVBAR */
+
+/* CSS FOR FOOTER PART */
+
+footer {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: var(--main-bg);
+    margin-top: auto;
+}
+
+footer p {
+    color: #fff;
+    font-size: 2rem;
+}
+
+footer p span {
+    color: var(--main-color);
+}
+
+footer p span:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+footer .all-with-one {
+    display: flex;
+    flex-direction: row;
+}
+
+footer .all-with-one i {
+    font-size: 3.8rem;
+    color: #fff;
+    cursor: pointer;
+    margin: 0 1.6rem;
+}
+
+footer .all-with-one i:hover {
+    color: rgba(255, 255, 255, 0.199);
+}
+
+/* MEDIA QUERIES FOR FOOTER PART */
+
+@media (max-width: 500px) {
+    footer p {
+        font-size: 1.6rem;
+    }
+
+    footer .all-with-one i {
+        font-size: 3.4rem;
+    }
+}
+
+/* NOW THE CSS FOR THE PAGES START LIKE - ERROR PAGE AND HOME - PAGE ETC. */
+
+/* NOW FOR ALL THE ERROR PAGE.... */
+
+.page404 a button {
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    transition: .2s;
+}
+
+.page404 a button:hover {
+    cursor: pointer;
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+/* END OF ERROR PAGE */
+
+/* STYLING OF HOME - PAGE STARTS HERE..*/
+
+.main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* THIS IS FOR THE FIRST PART */
+
+.main .first_part {
+    width: 100%;
+    /* border: 4px solid black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.first_part p {
+    font-size: 2.5rem;
+    font-weight: 500;
+    color: #494646;
+    text-align: center;
+    padding: 5rem 0 .3rem 0;
+}
+
+.first_part h1 {
+    text-align: center;
+    font-size: 3.7rem;
+    color: #433f3f;
+    font-weight: 800;
+    padding: 0 1rem 1rem 0;
+}
+
+.first_part h1 span {
+    color: var(--main-color);
+}
+
+.first_part div {
+    display: flex;
+    margin: 2.2rem 0;
+}
+
+/* ALL THE CSS FOR THE FIRST BUTTON AND SVG AND HOVER IT */
+
+.first_part div .firstBtn {
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -4px black;
+    background-color: #9fc128;
+    display: flex;
+    flex-direction: row;
+}
+
+.first_part div .firstBtn svg {
+    height: 3rem;
+    width: 2.5rem;
+    margin-right: .7rem;
+}
+
+.first_part div .firstBtn:hover {
+    background-color: #a0c12879;
+}
+
+/* ALL THE CSS FOR THE SECOND BUTTON AND SVG AND HOVER IT */
+
+.first_part div .secondBtn {
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -4px black;
+    background-color: rgb(199, 59, 16);
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+}
+
+.first_part div .secondBtn svg {
+    height: 3rem;
+    width: 2.5rem;
+    margin-right: .7rem;
+}
+
+.first_part div .secondBtn:hover {
+    background-color: rgba(199, 59, 16, 0.486);
+}
+
+/* THIS IS FOR THE SECOND PART */
+
+.main .second_part {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main .second_part i {
+    font-size: 33rem;
+    padding: 1rem;
+    color: #d76720cf;
+    margin: 1rem;
+    border: 1.5px solid transparent;
+}
+
+.main .second_part i:hover {
+    border: 1.5px solid black;
+}
+
+/* RESPONSIVE-CODE FOR HOME PAGE */
+
+@media (max-width: 550px) {
+    .first_part p {
+        font-size: 2.3rem;
+    }
+
+    .first_part h1 {
+        font-size: 3.2rem;
+    }
+
+    .first_part div .firstBtn {
+        font-size: 1.5rem;
+        padding: .9rem 2rem;
+    }
+
+    .first_part div .secondBtn {
+        padding: .9rem 2rem;
+        font-size: 1.5rem;
+    }
+
+    .main .second_part i {
+        font-size: 23rem;
+    }
+}
+
+/* COMPLETE OF HOME - PAGE */
+
+/* STARTING CODE FOR CORONA PAGE */
+
+.container_new {
+    min-height: 100vh;
+    width: 100%;
+    background: conic-gradient(#fd084c,
+            #fe9800,
+            #fff020,
+            #3ed4fb,
+            #3363ff,
+            #b102b7,
+            #fd084c);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container_new form {
+    margin: 2rem 0;
+}
+
+.container_new form input {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    font-size: 2.4rem;
+    padding: .8rem 1.5rem;
+    width: 45vw;
+    outline: none;
+    color: #000;
+}
+
+.container_new form button {
+    margin-left: 1.8rem;
+    background-color: orangered;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 2.2rem;
+    padding: 1rem 3rem;
+    border-radius: 2rem;
+    outline: none;
+}
+
+.container_new form button:hover {
+    border-color: orangered;
+    background-color: #fff;
+    color: orangered;
+}
+
+.container_new .myError {
+    padding: 2.3rem 16.5rem;
+    background-color: red;
+    color: #fff;
+    border-radius: 2rem;
+    font-size: 2rem;
+    margin: 2rem;
+    text-align: center;
+    line-height: 2.5;
+    display: none;
+}
+
+.container_new .corona_box {
+    min-height: 36rem;
+    min-width: 27rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 30px rgb(0 0 0 / 10%);
+    backdrop-filter: blur(5px);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 2rem;
+}
+
+.corona_box .CountryLocation {
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    padding: 1rem;
+}
+
+.corona_box .CountryLocation span {
+    font-size: 4.3rem;
+    color: #00ff4c;
+}
+
+.corona_box .CountryLocation span:hover {
+    text-decoration: 2px underline #00ff4c;
+}
+
+.container_new .corona_box .corona_first {
+    border: 1px solid #fff;
+    padding: 1.5rem;
+    margin-bottom: 2.1rem;
+}
+
+.container_new .corona_box .corona_third {
+    border: 1px solid #fff;
+    padding: 1.5rem;
+    margin-bottom: 2.1rem;
+}
+
+.container_new .corona_box .infoHead {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.container_new .corona_box .infoHead i {
+    font-size: 6.5rem;
+    padding-left: 1rem;
+    color: #0027ff;
+}
+
+.container_new .corona_box .data {
+    font-size: 5rem;
+    font-weight: 789;
+}
+
+/* RESPONSIVENESS CODE FOR THE CORONA PAGE */
+
+@media (max-width: 650px) {
+
+    .container_new form input {
+        width: 55vw;
+        font-size: 1.8rem;
+    }
+
+    .corona_box .CountryLocation {
+        font-size: 3.1rem;
+    }
+
+    .corona_first,
+    .corona_second,
+    .corona_third {
+        padding: 1.1rem;
+        margin-bottom: 1.7rem;
+    }
+
+    .container_new .corona_box .infoHead {
+        font-size: 3rem;
+    }
+
+    .container_new .corona_box .infoHead i {
+        font-size: 5.5rem;
+    }
+
+    .container_new .corona_box .data {
+        font-size: 4rem;
+        font-weight: 650;
+    }
+
+    .container_new form button {
+        font-size: 1.7rem;
+        padding: .8rem 2rem;
+    }
+}
+
+/* COMPLETE CODE FOR CORONA PAGE */
+
+/* Now ALL CODE FOR ABOUT PAGE */
+
+.main_header_left {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.main_header_left p {
+    font-size: 3rem;
+}
+
+.main_header_left h1 {
+    font-size: 4rem;
+    font-weight: 650;
+    margin: 1rem 0 3rem 0;
+}
+
+.main_header_left h1 span {
+    color: var(--main-color);
+}
+
+.main_header_left h1 span:hover {
+    text-decoration: 3px underline var(--main-color);
+}
+
+.main_header_left button {
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    box-shadow: 0 8px 6px -6px #000;
+    transition: .2s;
+}
+
+.main_header_left button:hover {
+    box-shadow: 0 8px 6px -6px var(--main-color);
+}
+
+.main_header_right {
+    margin: 1.9rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main_header_right i {
+    font-size: 36rem;
+}
+
+.main_header_right figure i {
+    font-size: 51rem;
+    filter: drop-shadow(0 0.5rem 1rem rgba(0, 0, 0, 0.3));
+}
+
+@media (max-width: 650px) {
+    .main_header_right figure i {
+        font-size: 43rem;
+    }
+
+    .main_header_left h1 {
+        font-size: 3.4rem;
+    }
+
+    .main_header_left button {
+        padding: .9rem 2rem;
+        font-size: 1.8rem;
+    }
+}
+
+/* ALL THE CODE FOR ABOUT PAGE */
+
+/* ALL THE CODE FOR CONTACT US PAGE */
+
+.header_contact {
+    text-align: center;
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 4rem;
+    font-weight: 800;
+    background-color: #000;
+    color: #fff;
+}
+
+.header_contact:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.partInTwo {
+    display: flex;
+    margin: 0 0 2rem 0;
+    flex-direction: row;
+}
+
+.partInTwo .first {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 3px solid red; */
+}
+
+.partInTwo .first .contact-icon {
+    font-size: 43rem;
+}
+
+.partInTwo .second {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* border: 3px solid green; */
+}
+
+.second .contact-us-form form {
+    border: 3.5px solid #000;
+    border-radius: 2rem;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 2rem;
+}
+
+.second .contact-us-form form input {
+    font-size: 2.6rem;
+    border: none;
+    outline: none;
+    border-radius: 2.4rem;
+    box-shadow: 0 8px 6px -6px #000, 0px -4px 3px #0006;
+    margin: 1.3rem;
+    padding: 1rem 3.5rem;
+}
+
+.second .contact-us-form form input:hover {
+    box-shadow: inset 0 8px 6px -6px #000,
+        inset 0px -4px 3px #0006;
+}
+
+.second .contact-us-form form button {
+    /* display: block; */
+    margin: 1.5rem;
+    padding: 1.1rem 15rem;
+    border-radius: 2.2rem;
+    font-size: 3rem;
+    background-color: #fd084c;
+    color: #fff;
+    border: 1.5px solid #fff;
+}
+
+.second .contact-us-form form button:hover {
+    background-color: #fff;
+    color: #fd084c;
+    border-color: #fd084c;
+}
+
+/* RESPONSIVE CODE FOR THE CONTACT PAGE */
+
+@media (max-width: 1150px) {
+    .contact {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+
+    .partInTwo {
+        flex-direction: column;
+    }
+
+    .partInTwo .first {
+        width: 100%;
+    }
+
+    .partInTwo .second {
+        width: 100%;
+    }
+}
+
+@media (max-width: 670px) {
+    .contact {
+        font-size: 2.7rem;
+        font-weight: 700;
+    }
+
+    .partInTwo .first .contact-icon {
+        font-size: 33rem;
+    }
+
+    .second .contact-us-form form {
+        margin: 1.2rem;
+        padding: 1.2rem;
+    }
+
+    .second .contact-us-form form input {
+        font-size: 2.3rem;
+        padding: 1rem 2.5rem;
+        margin: 1.2rem;
+    }
+
+    .second .contact-us-form form button {
+        padding: 1.1rem 12rem;
+        font-size: 2.8rem;
+    }
+
+    @media (max-width: 500px) {
+        .partInTwo .first .contact-icon {
+            font-size: 25rem;
+        }
+
+        .second .contact-us-form form {
+            margin: .7rem;
+            padding: .7rem;
+        }
+
+        .second .contact-us-form form input {
+            font-size: 2.1rem;
+            padding: 1rem 2rem;
+            margin: 1.2rem;
+        }
+
+        .second .contact-us-form form button {
+            padding: 1.1rem 11rem;
+            font-size: 2.3rem;
+        }
+    }
+}
+
+/* CODE COMPLETE OF CONTACT PAGE */
+
+/* CODE COMPLETE FOR THE WHOLE WEBSITE */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    {{>header}}
+    <div class="container_new">
+        <form>
+            <input type="text" id="UserCity" placeholder="Please Enter Your Country...">
+            <button class="myBtn" id="searchButton">Submit</button>
+        </form>
+        <div class="myError" id="myErrorBox">
+            <h1 id="MyError"></h1>
+        </div>
+        <div class="corona_box">
+            <h1 class="CountryLocation">Corona Updates Of <span id="country">__</span></h1>
+            <div class="corona_first">
+                <h1 class="infoHead">Confirmed Cases: <i class="fa-solid fa-disease"></i></h1>
+                <h1 class="data" id="confirmedCases">0+</h1>
+            </div>
+            <div class="corona_third">
+                <h1 class="infoHead">Total Deaths: <i class="fa-solid fa-skull-crossbones"></i></h1>
+                <h1 class="data" id="deaths">0+</h1>
+            </div>
+        </div>
+    </div>
+    {{>footer}}
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+
+{{!-- COMPLETE WEBSITE IS BUILD --}}
